@@ -3,14 +3,12 @@ class RandomForObject
 {
     getUrls(count)
     {
-        let arr = [];
-        for (let i = 0; i < count; i++) {
-            arr[i] = {
-                id: Chance().integer({min: 0, max: 100}),
-                wrapped: chance.pickone(['true', 'false'])
-            };
+        let array=[];
+        for(let i=0;i<count;i++)
+        {
+            array[i]=Chance().url();
         }
-        return arr;
+        return array;
     }
     getTags(count) {
         let array = [];
