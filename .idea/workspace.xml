@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081ab45a-0a99-44a7-859b-4454253bbbf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/fixtures/pet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.create-pet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.delete-pet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.get-pet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.update-pet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/service/apiSettings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/service/petService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/utils/limits.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/utils/requestsDataGenerator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/all-tests/api-tests/api-test-swagger.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/api-test-swagger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/page-objects/RandomForObject.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/page-objects/RandomForObject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/all-tests/api-tests/api-test-swagger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,58 +29,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/api-test.js">
+        <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.get-pet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-772">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/api-test-swagger.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-279">
-              <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/fixtures/pet.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/page-objects/RandomForObject.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/fixtures/user.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/all-tests/ui-tests/ui-test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+            <state relative-caret-position="146">
+              <caret line="72" column="106" selection-start-line="72" selection-start-column="106" selection-end-line="72" selection-end-column="106" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -78,38 +40,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cypress.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="272">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/fixtures/product.json">
+        <entry file="file://$PROJECT_DIR$/cypress/utils/requestsDataGenerator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="-102">
+              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/page-objects/accessoriesPage.js">
+        <entry file="file://$PROJECT_DIR$/cypress/service/apiSettings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/page-objects/searchResultPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state>
+              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -136,12 +92,16 @@
         <option value="$PROJECT_DIR$/cypress/page-objects/searchResultPage.js" />
         <option value="$PROJECT_DIR$/cypress/fixtures/product" />
         <option value="$PROJECT_DIR$/cypress/all-tests/ui-tests/ui-test.js" />
-        <option value="$PROJECT_DIR$/cypress.json" />
         <option value="$PROJECT_DIR$/cypress/all-tests/api-tests/api-test.js" />
         <option value="$PROJECT_DIR$/cypress/page-objects/RandomForObject.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.json5" />
         <option value="$PROJECT_DIR$/cypress/fixtures/pet.json" />
         <option value="$PROJECT_DIR$/cypress/all-tests/api-tests/api-test-swagger.js" />
+        <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/cypress.json" />
+        <option value="$PROJECT_DIR$/cypress/service/petService.js" />
+        <option value="$PROJECT_DIR$/cypress/utils/requestsDataGenerator.js" />
+        <option value="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.get-pet.js" />
       </list>
     </option>
   </component>
@@ -152,10 +112,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-963" />
-    <option name="y" value="57" />
+    <option name="x" value="-965" />
+    <option name="y" value="55" />
     <option name="width" value="1935" />
-    <option name="height" value="1039" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,6 +153,14 @@
               <item name="Laba1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Laba1" type="462c0819:PsiDirectoryNode" />
               <item name="cypress" type="462c0819:PsiDirectoryNode" />
+              <item name="all-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="api-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="PetEntity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Laba1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Laba1" type="462c0819:PsiDirectoryNode" />
+              <item name="cypress" type="462c0819:PsiDirectoryNode" />
               <item name="fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -200,6 +168,24 @@
               <item name="Laba1" type="462c0819:PsiDirectoryNode" />
               <item name="cypress" type="462c0819:PsiDirectoryNode" />
               <item name="page-objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Laba1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Laba1" type="462c0819:PsiDirectoryNode" />
+              <item name="cypress" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Laba1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Laba1" type="462c0819:PsiDirectoryNode" />
+              <item name="cypress" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Laba1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Laba1" type="462c0819:PsiDirectoryNode" />
+              <item name="cypress" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Laba1" type="b2602c69:ProjectViewProjectNode" />
@@ -219,17 +205,20 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON5" />
-    <property name="last_opened_file_path" value="D:/SamolazovProject-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/cypress-university-project-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\5sem\TeachArt\Laba1\cypress\all-tests" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\5sem\TeachArt\Laba1\cypress\all-tests" />
       <recent name="D:\5sem\TeachArt\Laba1\cypress" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\5sem\TeachArt\Laba1\cypress" />
+      <recent name="D:\5sem\TeachArt\Laba1\cypress\all-tests\api-tests\PetEntity" />
+      <recent name="D:\5sem\TeachArt\Laba1\cypress\all-tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -266,18 +255,22 @@
       <workItem from="1570708376278" duration="1594000" />
       <workItem from="1570724301314" duration="12000" />
       <workItem from="1570736896330" duration="811000" />
-      <workItem from="1570781400687" duration="4809000" />
+      <workItem from="1570781400687" duration="5142000" />
+      <workItem from="1570791541709" duration="2647000" />
+      <workItem from="1571378179084" duration="8744000" />
+      <workItem from="1571571618160" duration="272000" />
+      <workItem from="1571768050671" duration="6375000" />
+      <workItem from="1571836808711" duration="3870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46627000" />
+    <option name="totallyTimeSpent" value="68868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15730338" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15730338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -291,7 +284,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31586403" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31586403" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -320,25 +314,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cypress/support/commands.js">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json5">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="85">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/ui-tests/ui-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cypress/fixtures/example.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cypress.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -349,13 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cypress/page-objects/searchResultPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cypress/page-objects/accessoriesPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -363,13 +353,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cypress/all-tests/ui-tests/ui-test.js">
+    <entry file="file://$PROJECT_DIR$/cypress/page-objects/searchResultPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/api-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-908">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/api-test-swagger.js" />
+    <entry file="file://$PROJECT_DIR$/cypress/fixtures/pet.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -380,6 +382,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/support/commands.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/support/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.update-pet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cypress/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="253" column="37" lean-forward="true" selection-start-line="253" selection-start-column="37" selection-end-line="253" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cypress/fixtures/user.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -387,34 +434,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json5">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/cypress/fixtures/example.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cypress/fixtures/pet.json">
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.delete-pet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/api-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-772">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/api-test-swagger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
+        <state>
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.create-pet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/utils/limits.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/service/petService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/service/apiSettings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/utils/requestsDataGenerator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.get-pet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="72" column="106" selection-start-line="72" selection-start-column="106" selection-end-line="72" selection-end-column="106" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -22,5 +22,8 @@
   "devDependencies": {
     "chance": "^1.1.0",
     "cypress": "^3.4.1"
+  },
+  "dependencies": {
+    "cypress-testrail-accumulative-reporter": "^1.1.4"
   }
 }
