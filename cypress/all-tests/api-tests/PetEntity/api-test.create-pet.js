@@ -102,5 +102,22 @@ describe('Tests for Create Pet endpoint', () => {
             expect(response.statusText).to.eq('Bad Request');
         })
     })
+    it('Validation check: Min', () => {
+        let data=getPetRequestData(DATA_OPTIONS.MIN,true);
+        createPet({name:data.name, photoUrls: data.photoUrls}, false).then(response => {
+            expect(response.body.name).to.eq(data.name);
+            expect(response.body.photoUrls).to.deep.eq(data.photoUrls);
+            expect(response.status).to.eq(200);
+        })
+    })
+    it('Validation check: Max', () => {
+        let data=getPetRequestData(DATA_OPTIONS.MAX,true);
+        console.log(data);
+        createPet({name:data.name+"hello" , photoUrls: data.photoUrls}, false).then(response => {
+            expect(response.body.name).to.eq(data.name);
+            expect(response.body.photoUrls).to.deep.eq(data.photoUrls);
+            expect(response.status).to.eq(200);
+        })
+    })
 });
 
