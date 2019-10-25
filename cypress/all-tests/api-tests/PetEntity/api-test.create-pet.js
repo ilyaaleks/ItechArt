@@ -2,6 +2,7 @@ import Chance from 'chance'
 import {createPet, deletePet, getPetById, updatePet} from "../../../service/petService"
 import {DATA_OPTIONS, getPetRequestData} from "../../../utils/requestsDataGenerator";
 import {API_URL} from "../../../service/apiSettings";
+import {PET_LIMIT} from "../../../utils/limits";
 
 describe('Tests for Create Pet endpoint', () => {
 
@@ -102,21 +103,22 @@ describe('Tests for Create Pet endpoint', () => {
             expect(response.statusText).to.eq('Bad Request');
         })
     })
-    it('Validation check: Min', () => {
-        let data=getPetRequestData(DATA_OPTIONS.MIN,true);
-        createPet({name:data.name, photoUrls: data.photoUrls}, false).then(response => {
-            expect(response.body.name).to.eq(data.name);
-            expect(response.body.photoUrls).to.deep.eq(data.photoUrls);
-            expect(response.status).to.eq(200);
+    it('Negative: photoUrl has max value+1', () => {
+        let dataSet=getPetRequestData(PET_LIMIT, true);
+        dataSet.photoUrls=fillUrls(PET_LIMIT.photoUrls.urlCount.max+1);
+        createPet(dataSet, false).then(response => {
+            expect(response.status).to.eq(400);
+            expect(response.messages[0].fieldName).to.eq(`${PET_LIMIT.photoUrls.urlCount}`);
+            expect(response.messages[0].fieldError).to.eq(`Length must be between ${PET_LIMIT.photoUrls.urlCount.min} and ${PET_LIMIT.photoUrls.urlCount.max}`);
         })
     })
-    it('Validation check: Max', () => {
-        let data=getPetRequestData(DATA_OPTIONS.MAX,true);
-        console.log(data);
-        createPet({name:data.name+"hello" , photoUrls: data.photoUrls}, false).then(response => {
-            expect(response.body.name).to.eq(data.name);
-            expect(response.body.photoUrls).to.deep.eq(data.photoUrls);
-            expect(response.status).to.eq(200);
+    it('Negative: name has max value+1', () => {
+        let dataSet=getPetRequestData(PET_LIMIT, true);
+        dataSet.tags=fillTags(PET_LIMIT.tags.name.max+1)
+        createPet(dataSet, false).then(response => {
+            expect(response.status).to.eq(400);
+            expect(response.messages[0].fieldName).to.eq(`${PET_LIMIT.tags.name}`);
+            expect(response.messages[0].fieldError).to.eq(`Length must be between ${PET_LIMIT.tags.name.min} and ${PET_LIMIT.tags.name.max}`);
         })
     })
 });
