@@ -48,7 +48,8 @@ describe('Tests for Create Pet endpoint', () => {
         createPet(requestData).then(response => {
             expect(response.status).to.eq(400);
             expect(response.body).to.have.property('id', requestData.id);
-            expect(response.body.id).to.be.greaterThan(0)
+            expect(response.body.id).to.be.greaterThan(0);
+            cy.writeFile("bagReport.json",response.body);
         })
     })
     it('Negative: No body in request', () => {
