@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081ab45a-0a99-44a7-859b-4454253bbbf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/googleTestBefore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/googleTestWithoutBefore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/selectorsTesks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/setTasks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.create-pet.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.create-pet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.create-pet.js/Tests for Create Pet endpoint -- Negative Invalid category id (string valid instead of numeric value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.create-pet.js/Tests for Create Pet endpoint -- Negative Invalid pet id (string valid instead of numeric value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.create-pet.js/Tests for Create Pet endpoint -- Negative Invalid pet status (numeric instead of valid string value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.create-pet.js/Tests for Create Pet endpoint -- Negative Invalid tag id (string valid instead of numeric value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.create-pet.js/Tests for Create Pet endpoint -- Negative Invalid tag name (numeric instead of valid string value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.create-pet.js/Tests for Create Pet endpoint -- Negative No values (empty body) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.create-pet.js/Tests for Create Pet endpoint -- Negative Required fields are null (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.get-pet.js/Tests for Get pet endpoint -- Negative Empty type C80 (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.get-pet.js/Tests for Get pet endpoint -- Negative Nonexisting status C77 (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.get-pet.js/Tests for Get pet endpoint -- Negative Status not string type C78 (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.update-pet.js/Tests for Update pet endpoint -- Negative Invalid category id (string valid numeric value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.update-pet.js/Tests for Update pet endpoint -- Negative Invalid pet ID (empty) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.update-pet.js/Tests for Update pet endpoint -- Negative Invalid pet Id (string instead of integer) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.update-pet.js/Tests for Update pet endpoint -- Negative Invalid pet id (string valid instead of numeric value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.update-pet.js/Tests for Update pet endpoint -- Negative Invalid pet status (numeric instead of valid string value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.update-pet.js/Tests for Update pet endpoint -- Negative Invalid tag id (string valid numeric value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.update-pet.js/Tests for Update pet endpoint -- Negative Invalid tag name (numeric instead of valid string value) (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/api-tests/PetEntity/api-test.update-pet.js/Tests for Update pet endpoint -- Negative Update pet with Nonexistent id (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/ui-tests/ui-test.js/UI tests -- Positive Create user (failed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/videos/api-tests/PetEntity/api-test.create-pet.js.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/videos/api-tests/PetEntity/api-test.delete-pet.js.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/videos/api-tests/PetEntity/api-test.get-pet.js.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/videos/api-tests/PetEntity/api-test.update-pet.js.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/videos/api-tests/api-test.js.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/videos/ui-tests/ui-test.js.mp4" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,7 +28,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/googleTestBefore.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="323">
@@ -64,10 +38,28 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/selectorsTesks.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/setTasks.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/googleTestWithoutBefore.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="21" selection-end-column="13" />
+                <state>
+                  <caret selection-end-line="26" />
                 </state>
               </provider>
             </entry>
@@ -107,7 +99,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.get-pet.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
+                <state relative-caret-position="68">
                   <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
                   <folding>
                     <element signature="e#0#27#0" expanded="true" />
@@ -159,6 +151,8 @@
         <option value="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/googleTest.js" />
         <option value="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/googleTestWithoutBefore.js" />
         <option value="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/googleTestBefore.js" />
+        <option value="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/selectorsTesks.js" />
+        <option value="$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/setTasks.js" />
       </list>
     </option>
   </component>
@@ -168,7 +162,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-965" />
     <option name="y" value="55" />
     <option name="width" value="1935" />
@@ -322,16 +316,15 @@
       <workItem from="1572037618641" duration="2509000" />
       <workItem from="1572073165437" duration="2015000" />
       <workItem from="1572178777185" duration="850000" />
-      <workItem from="1572181696597" duration="2422000" />
+      <workItem from="1572181696597" duration="4785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84891000" />
+    <option name="totallyTimeSpent" value="87254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15730338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -578,7 +571,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/api-test.get-pet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="68">
           <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
@@ -588,8 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/googleTestWithoutBefore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="21" selection-end-column="13" />
+        <state>
+          <caret selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -597,6 +590,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/selectorsTesks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/all-tests/api-tests/PetEntity/setTasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
