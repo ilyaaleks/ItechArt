@@ -30,6 +30,7 @@ describe('Tests for Create Pet endpoint', () => {
             createPet(pet).then(response => {
                 expect(response.status).to.eq(200);
                 expect(response.body).to.have.property('name', pet.name);
+
             })
         })
     });
@@ -46,6 +47,7 @@ describe('Tests for Create Pet endpoint', () => {
     it('Negative: No values (empty body)', () => {
         let requestData = {}
         createPet(requestData).then(response => {
+            console.log(response);
             expect(response.status).to.eq(400);
             expect(response.body).to.have.property('id', requestData.id);
             expect(response.body.id).to.be.greaterThan(0);

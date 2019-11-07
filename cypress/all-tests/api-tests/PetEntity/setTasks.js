@@ -12,23 +12,30 @@ describe("set",()=>
 {
     it(("check"),()=>
     {
+        cy.log("Task1");
         let set=new Set(['USD','RUB','BYN']);
+
+        cy.log("Task2");
         set.forEach(currency=>
-            console.log(currency)
+            cy.log(currency)
         )
+
+        cy.log("Task3");
         set.add('BYN');
         set.add('AUD');
         set.forEach(currency=>
-            console.log(currency)
+            cy.log(currency)
         )
         set.add('AZN').add('ALL');
         set.forEach(currency=>
-            console.log(currency)
+            cy.log(currency)
         )
-        console.log(set.has('AZN'));
+
+        cy.log("Task4");
+        cy.log(set.has('AZN').toString());
         set.delete('AZN');
-        console.log(set.has('AZN'));
-        Chance().pickone(set.toArray());
+        cy.log(set.has('AZN').toString());
+        cy.log(Chance().pickone(Array.from(set)));
 
     })
     it(("second set"),()=>
@@ -54,18 +61,43 @@ describe("set",()=>
             {planet: "Neptune", radius: 24764, density: 1.64, distance: 30.07}
         ]
         for(let planet of planets)
-            console.log(`planet: ${planet.name}, radius: ${planet.radius}, density: ${planet.density}, distance:  ${planet.distance}`);
+            cy.log(`planet: ${planet.planet}, radius: ${planet.radius}, density: ${planet.density}, distance:  ${planet.distance}`);
+
+        cy.log("Task2");
         let planetsOfSolarSystem=planets.map((item)=>{
-            item.solarSytem="SolarSystem";
+            item.solarSytem=true;
+            return item;
         });
-        printPlanets(planetsOfSolarSystem);
-        planets.push({planet: "SomeNewPlanet", radius: 24764, density: 1.64, distance: 30.07, solarSystem: false});
-        planets.reduce((item,currentValue)=>{
-            item.radius+currentValue;
+        planetsOfSolarSystem.forEach((item)=>{
+            cy.log(item);
         })
+        printPlanets(planetsOfSolarSystem);
+
+        cy.log("Task3");
+        planets.push({planet: "SomeNewPlanet", radius: 24764, density: 1.64, distance: 30.07, solarSystem: false});
+
+        cy.log("Task4");
+        planets.reduce((item,currentValue)=>{
+            item+currentValue.radius;
+        },0)
+
+
         cy.log("====Planets with distance > 5 ====")
         printPlanets(getPlanetsWithDistance(planets, 5))
-        planets.planet.indexOf("SomeNewPlanet");
+        cy.log("Task6");
+        planets.splice(planets.indexOf("SomeNewPlanet"),1);
+
+        cy.log("Task7");
+        planets.sort((planet1,planet2)=>
+        {
+            let x = planet1.planet.radius;
+            let y = planet2.planet.radius;
+            if (x < y) {return -1;}
+            if (x > y) {return 1;}
+            return 0;
+        })
+
+        cy.log("Task8");
         planets.sort((planet1,planet2)=>
         {
             let x = planet1.planet.toLowerCase();
@@ -74,17 +106,25 @@ describe("set",()=>
             if (x > y) {return 1;}
             return 0;
         })
-        console.log(planets.length);
+
+
+        cy.log(planets.length.toString());
+
+
+    })
+    it("Site",()=>
+    {
+        cy.log("Task10");
         cy.fixture('obj').then((object)=>{
             let conv=Chance().pickone(object.rates);
             cy.visit("https://www.xe.com/currencyconverter");
-            cy.get("#converterForm > form > div:nth-child(4) > div > div").click();
+            cy.get("div[class='css-1nah8gs converterform-dropdown__control']").click({force: true, multiple: true });
             cy.get('#to').type(`${conv.shortName}{enter}{enter}`)
-            cy.get("#converterForm > form > button.OldButton-sc-1wdh3eu-5.submitButton.SubmitButton-sc-6euey0-0.dRSeAz").click();
-            cy.get("#converterResult > section > div.OldColumn-sc-1rdw0o5-0.second.RateInfoColumn-sc-1cj7zsm-4.eMpVzP > div:nth-child(2)").should("eq",conv.rate);
+            cy.get("button[aria-label='Convert']").click();
+            cy.get("div[class^='sc-EHOje']:nth-child(2)").invoke('text').then((divText) => {
+                expect(divText.toString().toLowerCase()).to.contain(conv.rate);
+            });
         })
-
-
     })
 })
 

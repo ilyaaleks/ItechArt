@@ -9,7 +9,7 @@ export const isSuperSet=(set,subSet)=>{
 }
 export const union=(setA,setB)=>{
     let _union=new Set(setA);
-    for(let elem of subSet)
+    for(let elem of setB)
     {
         _union.add(elem);
     }
@@ -43,5 +43,5 @@ export const printPlanets=(planets)=>
 }
 export const getPlanetsWithDistance=(planets,distance)=>
 {
-    planets.filter(planet=>planet.distance>distance);
+    return planets.filter(planet=>planet.distance>distance);
 }
