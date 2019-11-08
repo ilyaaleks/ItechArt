@@ -45,3 +45,10 @@ export const getPlanetsWithDistance=(planets,distance)=>
 {
     return planets.filter(planet=>planet.distance>distance);
 }
+export const printMapOFPlanets=(planets)=>
+{
+    planets.forEach((value, key) => {
+        cy.log(key + ': ' + Object.keys(value).map(objKey => objKey + ':' + value[objKey]).join(', '))
+    })
+
+}
