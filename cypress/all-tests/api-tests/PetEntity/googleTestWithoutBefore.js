@@ -12,9 +12,9 @@ describe('Tests for Google', () => {
             url: "https://storage.googleapis.com/mannequin/2018/data/productwall/accessories/en_us.json?c=1571310916",
             failOnStatusCode: false,
         }).then((response) => {
-            cy.wrap(response.body).as("Titles")
+            cy.wrap(response.body).as("titles")
         })
-        cy.get('@Titles').then(titleList => {
+        cy.get('@titles').then(titleList => {
             console.log(titleList.products.length);
             for(let i=0;i<titleList.products.length;i++)
             {

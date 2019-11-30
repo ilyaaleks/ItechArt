@@ -7,7 +7,7 @@ import {PET_LIMIT} from "../../../utils/limits";
 describe('Tests https://techstepacademy.com/training-ground', () => {
 
     it(("Selectors"), () => {
-        cy.visit("https://techstepacademy.com/training-ground/");
+       cy.visit("https://techstepacademy.com/training-ground/");
         cy.get('[name^="i2_"]')
         cy.xpath("//*[contains(@name,'i2_')]")
 
@@ -25,6 +25,15 @@ describe('Tests https://techstepacademy.com/training-ground', () => {
 
         cy.get('div[class="sqs-block-content"] > p')
         cy.xpath('//div[@class="sqs-block-content"]/child::p')
+
+        cy.get('button[value="12245"]')
+        cy.get('[id="anyId"]')
+        cy.get('[class="anyClass"]')
+
+        cy.xpath("//*[@id='anyId']")
+        cy.xpath("//*[@class='anyClass']")
+        cy.xpath("//*[@value='12245']")
+
     })
 
 })
